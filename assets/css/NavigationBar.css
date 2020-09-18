@@ -1,0 +1,251 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+img {
+    border: none;
+}
+
+/*
+
+ContactBar SECTION
+
+*/
+
+.ContactBarContainer .ContactBar {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.ContactBar .EmailandPhone span {
+  opacity:0.7;
+  font-size: 15px;
+}
+
+.ContactBar .EmailandPhone .Login a {
+  padding:5px 5px;
+  border:1px solid #007bff;
+}
+
+@media only screen and (max-width: 450px) {
+  .ContactBar .EmailandPhone #Phone,#line {
+    display:none;
+  }
+}
+
+
+/*
+
+------- Preloader -------
+
+*/
+.preloaderContainer {
+  position: fixed;
+  height:100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #ff6347;
+  z-index: 9999;
+}
+.preloader{
+  margin: 0 auto;
+}
+    
+.square{
+display:inline-block;
+height:20px;
+width:20px;
+border:2px solid white;
+margin:0px 5px;
+animation:spin 1.5s ease infinite;
+}
+    
+.s1{animation-delay:0ms;}
+.s2{animation-delay:200ms;}
+.s3{animation-delay:400ms;}
+.s4{animation-delay:600ms;}
+@keyframes spin{
+  0%{	transform:rotateZ(0deg);
+    background:white;}
+  20%{transform:rotateZ(90deg);
+    background:black;}
+  100%{transform:rotateZ(90deg);
+    background:black;}
+}
+
+/*
+
+------- Preloader Ended -------
+
+*/
+
+
+/*
+
+NavigationBar SECTION
+
+*/
+
+header {
+  background-color: white;
+}
+
+header .NavigationBar{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding:1em 0;
+}
+
+header .LogoandText {
+  display: flex;
+  align-items: center;
+}
+
+header .LogoandText #Logo img {
+  height:80px;
+  width:100px;
+}
+
+header .LogoandText #Text #Text-Heading-1 {
+  font-size:0.8rem;
+  
+}
+
+header .LogoandText #Text #Text-Heading-2 {
+  font-size:1.2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header .HamburgerMenu {
+  justify-self: end;
+}
+
+header .HamburgerMenu i {
+  color:#37517e;
+  font-size:2rem;
+}
+
+/*
+  Side Navigation Bar
+*/
+.sidenav {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.2s;
+  padding-top: 17px; /* Logo Top Padding */
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  padding:0 1rem;
+}
+
+.sidenav a:hover {
+  color: #000000;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.HamburgerMenu .navLogo img {
+  height:100px; 
+  width:120px;
+}
+
+.HamburgerMenu .sidenav ul {
+  margin-top:10px;
+}
+
+.HamburgerMenu .sidenav ul #navItems {
+  list-style: none;
+  padding: 1rem 0px;
+  text-transform: uppercase;
+  text-align:left;
+  font-size:1.1em;
+  width:100%;
+  border:none;
+  border-bottom:2px solid #eeeeee;
+  font-weight:bold;
+  outline:none;
+}
+
+.HamburgerMenu .sidenav ul #navItems:hover{
+  color:#b50003 !important;
+}
+
+.HamburgerMenu .sidenav ul #navItems:hover i{
+  color:#b50003 !important;
+}
+
+.active{
+  color:#b50003 !important;
+}
+
+.HamburgerMenu .sidenav ul #navItems i {
+  font-size:1.2rem;
+  color:black;
+}
+
+@media (max-width: 480px) {
+  .sidenav {
+      padding-top: 15px;
+  }
+  
+  .sidenav a {
+      font-size: 18px;
+  }
+
+  header .LogoandText #Text #Text-Heading-1 {
+      display: none;
+  }
+  
+  header .LogoandText #Text #Text-Heading-2 {
+      font-size:1rem;
+  }
+
+  header .LogoandText #Logo img {
+      height:60px;
+      width:70px;
+  }
+}

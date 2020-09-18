@@ -1,0 +1,312 @@
+/*
+
+ SLIDER SECTION
+
+*/
+
+.LandingPageSlideShowContainer .carousel-inner img {
+  height:500px;
+  width: 100%;
+  filter: brightness(40%);   
+  filter: blur(40%);
+  z-index: -1;
+}
+
+.LandingPageSlideShowContainer .carousel-inner .SlideText {
+  color:white;
+  width: 100%;
+  position: absolute;
+  top:35%;
+  transform: translateY(-35%);
+}
+
+.LandingPageSlideShowContainer #SlidePrev, #SlideNext {
+  width:45px;
+  height:60px;
+  background-color:white;
+  color: black;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+  /* Position the "next button" to the right */
+.LandingPageSlideShowContainer #SlideNext {
+  color: #01bafd;
+  right: 0px;
+  border-radius: 5px 0 0 5px;
+}
+
+.LandingPageSlideShowContainer #SlidePrev {
+  left: 0px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.LandingPageSlideShowContainer #SlidePrev:hover,#SlideNext:hover {
+  color:black;
+}
+
+.LandingPageSlideShowContainer #SlideNext i,#SlidePrev i {
+  color:black;
+}
+
+
+.LandingPageSlideShowContainer .carousel-inner .SlideText #welcomeText {
+  font-size:1.2rem;
+  text-align: center;
+}
+
+.LandingPageSlideShowContainer .carousel-inner .SlideText #Heading-1 {
+  font-size:2.7rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.LandingPageSlideShowContainer .carousel-inner .SlideText #Heading-1 p {
+  padding:0px 150px;
+}
+
+.LandingPageSlideShowContainer .carousel-inner .SlideText #shortBorder {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #007bff;
+  height: 1px;
+  width: 170px;
+  margin: 7px 0;
+}
+
+.LandingPageSlideShowContainer .carousel-inner .SlideText #Heading-2 {
+  font-size:1.7rem;
+  text-align: center;
+}
+
+.LandingPageSlideShowContainer .carousel-inner .SlideText .LearnButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.LandingPageSlideShowContainer .carousel-inner .SlideText .LearnButtonContainer #learnButton {
+  text-decoration: none;
+  font-size:1.2em;
+  padding:0.7em 0.8em;
+  font-family:'Play', sans-serif;
+  color:#031f38;
+  background:linear-gradient(to right,#ffbf00 50%, #ffcd38 50%);
+  background-size:200%;
+  background-position:right;
+  border:none;
+  border-radius:10px;
+  outline:none;
+  transition:200ms ease-out;
+}
+
+.LandingPageSlideShowContainer .carousel-inner .SlideText .LearnButtonContainer #learnButton:hover {
+  background-position:left;
+  box-shadow:0 0 0.5em #ffbf00;
+}
+
+
+@media (max-width: 640px) {
+  .LandingPageSlideShowContainer .carousel-inner .SlideText #welcomeText {
+    font-size:15px;
+  }
+  
+  .LandingPageSlideShowContainer .carousel-inner .SlideText #Heading-1 {
+    font-size:35px;
+    padding:0px 10px;
+  }
+
+  .LandingPageSlideShowContainer .carousel-inner .SlideText #Heading-2 {
+    font-size:20px;
+  }
+
+  .LandingPageSlideShowContainer .carousel-inner .SlideText .LearnButtonContainer #learnButton {
+    text-decoration: none;
+    font-size:1em;
+    padding:0.7em 0.8em;
+  }
+
+  .LandingPageSlideShowContainer .carousel-inner .SlideText {
+    color:white;
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .LandingPageSlideShowContainer .carousel-inner .SlideText #welcomeText {
+    font-size:15px;
+  }
+  
+  .LandingPageSlideShowContainer .carousel-inner .SlideText #Heading-1 {
+    font-size:35px;
+    padding:0px 10px;
+  }
+
+  .LandingPageSlideShowContainer .carousel-inner .SlideText #Heading-2 {
+    font-size:20px;
+  }
+}
+
+
+/*
+
+  Service Setion
+
+*/
+
+.ServiceContainer {
+  display: inline;
+  float: left;
+  margin-top: -80px;
+  width: 100%;
+}
+
+.ServiceContainer .ServiceRow {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+.ServiceContainer .ServiceCard {
+  background-color: #01bafd;
+  color: #fff;
+  display: inline;
+  float: left;
+  padding: 25px 25px;
+  text-align: center;
+  width: 33.33%;
+}
+
+.ServiceContainer .Service .ServiceCard:nth-child(1) {
+  background-color: #45a0de;
+}
+
+.ServiceContainer .Service .ServiceCard:nth-child(2) {
+  background-color: #2ecc71;
+}
+.ServiceContainer .Service .ServiceCard:nth-child(3) {
+  background-color: #45a0de;
+}
+
+.ServiceContainer .ServiceCard #cardIcon a{
+  border: 1px solid #007bff;
+  border-radius: 50%;
+}
+
+.ServiceContainer .ServiceCard #cardIcon img {
+  font-size: 2.5rem;
+  height: auto;
+  width: 50px;
+}
+
+.ServiceContainer .ServiceCard #cardHeading {
+  font-size: 1.5rem;
+  word-wrap: break-word;
+}
+
+
+
+@media (max-width: 640px) {
+  .ServiceContainer {
+    margin-top: 25px;
+  }
+
+  .ServiceContainer .ServiceRow .ServiceCard {
+    padding: 20px 5px;
+  }
+
+  .ServiceContainer .ServiceRow .ServiceCard #cardHeading {
+    font-size: 16px;
+  }
+
+  .LandingPageSlideShowContainer .carousel-inner .SlideText #Heading-1 p {
+    padding:0px 10px;
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 480px) {
+  .ServiceContainer .ServiceRow .ServiceCard {
+    padding: 20px 15px;
+    width: 100%;
+  }
+
+  .ServiceContainer .ServiceRow .ServiceCard #cardHeading {
+    font-size: 18px;
+  } 
+}
+
+
+/*
+
+ SERVICE SECTION
+
+
+#mu-service {
+  display: inline;
+  float: left;
+  margin-top: -80px;
+  width: 100%;
+}
+#mu-service .mu-service-area {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#mu-service .mu-service-area .mu-service-single {
+  background-color: #01bafd;
+  color: #fff;
+  display: inline;
+  float: left;
+  padding: 35px 25px;
+  text-align: center;
+  width: 33.33%;
+}
+#mu-service .mu-service-area .mu-service-single:nth-child(2) {
+  background-color: #2ecc71;
+}
+#mu-service .mu-service-area .mu-service-single:nth-child(3) {
+  background-color: #45a0de;
+}
+#mu-service .mu-service-area .mu-service-single span {
+  font-size: 30px;
+}
+#mu-service .mu-service-area .mu-service-single h3 {
+  font-size: 25px;
+}
+#mu-service .mu-service-area .mu-service-single p {
+  font-weight: lighter;
+}
+
+
+@media (max-width: 640px) {
+  #mu-service {
+    margin-top: 30px;
+  }
+
+  #mu-service .mu-service-area .mu-service-single {
+    padding: 20px 5px;
+  }
+
+  #mu-service .mu-service-area .mu-service-single h3 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  #mu-service .mu-service-area .mu-service-single {
+    padding: 20px 15px;
+    width: 100%;
+  }
+
+  #mu-service .mu-service-area .mu-service-single h3 {
+    font-size: 18px;
+  }
+}
+
+*/
