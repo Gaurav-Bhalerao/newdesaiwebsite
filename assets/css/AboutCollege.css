@@ -1,5 +1,7 @@
 .AboutCollegeContainer {
     margin-top:120px;
+    background: rgba(31, 95, 139, 0.7);
+    color: white;
 }
 
 .AboutCollegeContainer #aboutText {
