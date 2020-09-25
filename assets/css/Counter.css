@@ -1,0 +1,71 @@
+/*
+
+Counter
+
+*/
+
+.CounterContainer {
+    position: relative;
+    background-image: url('../images/BG0.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000000b9;
+}
+
+.CounterContainer #counterHeading {
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+
+.CounterContainer .CounterBox {
+    text-align: center;
+    border-right: 2px solid grey;
+    margin: 50px 0px;
+}
+
+.CounterContainer #counterIcon i {
+    font-size: 1.5rem;
+}
+
+.CounterContainer #counter {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.CounterContainer #counterName {
+    font-size: 2rem;
+}
+
+
+@media (max-width: 480px) {
+
+    .CounterContainer #counterHeading {
+        font-size: 2rem;
+        padding: 17px 5px;
+    }
+
+    .CounterContainer .CounterBox {
+        text-align: center;
+        border: none;
+        border-bottom: 2px solid grey;
+        margin: 10px 0px;
+        padding: 10px 0;
+    }
+}
